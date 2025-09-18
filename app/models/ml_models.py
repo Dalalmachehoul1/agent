@@ -13,7 +13,7 @@ def _load_model(filename):
 
 # Charger les modèles (va lever une erreur si le fichier n'existe pas)
 random_forest_model = _load_model("random_forest_model.pkl")
-xgboost_model = _load_model("linear_regression_model .pkl")
+xgboost_model = _load_model("linear_regression_model.pkl")
 logistic_model = _load_model("logistic regression.pkl")
 svm_model = _load_model("resume_screen_model.pkl")
 
