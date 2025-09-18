@@ -24,7 +24,7 @@ def predict_turnover_rf(features):
     return float(prediction[0])
 
 def predict_turnover_xgb(features):
-    """XGBoost"""
+    """linear_regression_model"""
     prediction = xgboost_model.predict([features])
     return float(prediction[0])
 
@@ -34,6 +34,6 @@ def predict_turnover_logistic(features):
     return float(prediction[0])
 
 def predict_turnover_svm(features):
-    """SVM"""
+    """resume_screen_model"""
     prediction = svm_model.predict([features])
     return float(prediction[0])
