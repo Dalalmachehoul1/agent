@@ -12,10 +12,10 @@ def _load_model(filename):
         return pickle.load(f)
 
 # Charger les modèles (va lever une erreur si le fichier n'existe pas)
-random_forest_model = _load_model("random_forest.pkl")
-xgboost_model = _load_model("xgboost.pkl")
-logistic_model = _load_model("logistic_regression.pkl")
-svm_model = _load_model("svm.pkl")
+random_forest_model = _load_model("random_forest_model.pkl")
+xgboost_model = _load_model("linear_regression_model .pkl")
+logistic_model = _load_model("logistic regression.pkl")
+svm_model = _load_model("resume_screen_model.pkl")
 
 # Fonctions de prédiction — attention : features doit être une liste/array au bon format
 def predict_turnover_rf(features):
