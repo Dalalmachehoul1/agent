@@ -1,11 +1,7 @@
 from flask import Flask
 from app.blueprints.users import users_bp
 
-def create_app():
-    app = Flask(__name__)
-    app.config.from_pyfile('../config/config.py')
+app = Flask(__name__)
 
-    # Enregistrement des blueprints
-    app.register_blueprint(users_bp)
-
-    return app
+# Enregistrer le blueprint
+app.register_blueprint(users_bp, url_prefix="/users")
